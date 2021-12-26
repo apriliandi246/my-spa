@@ -1,11 +1,6 @@
 import buttonComponent from "../components/button.js";
 import countButtons from "../components/count-buttons.js";
-import {
-  append,
-  setTitle,
-  createElement,
-  setTextContent,
-} from "../dom/utils.js";
+import { append, setTitle, createElement, setTextContent } from "../dom/utils.js";
 
 export default function settingsPageContent(containerApp) {
   setTitle("Settings");

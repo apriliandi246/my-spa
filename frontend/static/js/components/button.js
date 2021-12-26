@@ -1,11 +1,5 @@
 import { countStore } from "../store/main.js";
-import {
-  append,
-  listener,
-  setAttribute,
-  createElement,
-  setTextContent,
-} from "../dom/utils.js";
+import { append, listener, setAttribute, createElement, setTextContent } from "../dom/utils.js";
 
 export default function buttonComponent(type, containerApp) {
   const button = createElement("button");

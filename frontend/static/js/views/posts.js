@@ -1,13 +1,7 @@
 import { postsStore } from "../store/main.js";
 import buttonComponent from "../components/button.js";
 import countButtons from "../components/count-buttons.js";
-import {
-  append,
-  remove,
-  setTitle,
-  createElement,
-  setTextContent,
-} from "../dom/utils.js";
+import { append, remove, setTitle, createElement, setTextContent } from "../dom/utils.js";
 
 export default function postsPageContent(containerApp) {
   setTitle("Posts");

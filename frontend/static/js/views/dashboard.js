@@ -1,11 +1,5 @@
 import countButtons from "../components/count-buttons.js";
-import {
-  append,
-  setTitle,
-  setAttribute,
-  createElement,
-  setTextContent,
-} from "../dom/utils.js";
+import { append, setTitle, setAttribute, createElement, setTextContent } from "../dom/utils.js";
 
 export default function dashboardPageContent(containerApp) {
   setTitle("Dashboard");

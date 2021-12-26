@@ -1,12 +1,6 @@
 import buttonComponent from "../components/button.js";
 import countButtons from "../components/count-buttons.js";
-import {
-  append,
-  remove,
-  setTitle,
-  createElement,
-  setTextContent,
-} from "../dom/utils.js";
+import { append, remove, setTitle, createElement, setTextContent } from "../dom/utils.js";
 
 export default function usersPageContent(containerApp) {
   setTitle("Users");
@@ -41,8 +35,6 @@ export default function usersPageContent(containerApp) {
 
   append(containerApp, headingOne);
   append(containerApp, paragraph);
-
   buttonComponent("increment", containerApp);
-
   append(containerApp, loadingIndicator);
 }

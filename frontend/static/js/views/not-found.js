@@ -1,10 +1,4 @@
-import {
-  append,
-  setTitle,
-  setAttribute,
-  createElement,
-  setTextContent,
-} from "../dom/utils.js";
+import { append, setTitle, setAttribute, createElement, setTextContent } from "../dom/utils.js";
 
 export default function notFoundPageContent(containerApp) {
   setTitle("404 - Not Found");

@@ -1,6 +1,7 @@
 import usersPage from "./views/users.js";
 import postsPage from "./views/posts.js";
 import { listener } from "./dom/utils.js";
+import todosPage from "./views/todos.js";
 import settingsPage from "./views/settings.js";
 import notFoundPage from "./views/not-found.js";
 import dashboardPage from "./views/dashboard.js";
@@ -44,6 +45,10 @@ function renderContent(containerApp, currentRoute) {
     usersPage(containerApp);
   }
 
+  if (currentRoute === "/todos") {
+    todosPage(containerApp);
+  }
+
   if (currentRoute === "/404") {
     notFoundPage(containerApp);
   }
@@ -55,6 +60,7 @@ function router() {
     { path: "/posts" },
     { path: "/users" },
     { path: "/settings" },
+    { path: "/todos" },
     { path: "/404" },
   ];
 
@@ -65,9 +71,7 @@ function router() {
     };
   });
 
-  const match = potentialMatches.find(
-    (potentialMatch) => potentialMatch.isMatch
-  );
+  const match = potentialMatches.find((potentialMatch) => potentialMatch.isMatch);
 
   const containerApp = document.getElementById("app");
   renderContent(containerApp, match.route.path);
